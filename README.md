@@ -1,4 +1,4 @@
-# Spotify-Top-200-Dashboard-Project
+# Spotify-Top-200-Tracks-Dashboard-Project
 
 ## Background
 
