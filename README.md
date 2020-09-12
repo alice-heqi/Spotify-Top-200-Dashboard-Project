@@ -31,7 +31,7 @@ And I also used Beatifule Soup to scrape web data, and used smart_open and boto3
 I wrote two classes, one for getting the necessary parameters for data extraction, and the other one for all methods that extracting needed data.
 The class can be find here: [Spotify Top 200 class](https://github.com/alice-heqi/Spotify-Top-200-Tracks-Dashboard-Project/blob/master/spotify_top200_class.py)
 
-As the time needed to extract all the needed data is very long (52000 records of top 200 tracks in 65 countries and all tracks popularity, audio feature and artists information), I created an Airflow dag to run the ETL process automatically. The dag can be find here:[dag.py](https://github.com/alice-heqi/Spotify-Top-200-Tracks-Dashboard-Project/blob/master/spotify_etl_airflow.py)
+As I needed to extract large amount data weekly (13000 records of top 200 tracks in 65 countries and all tracks popularity, audio feature and artists information), I created an Airflow dag to run the ETL process automatically. The dag can be find here:[dag.py](https://github.com/alice-heqi/Spotify-Top-200-Tracks-Dashboard-Project/blob/master/spotify_etl_airflow.py)
 
 The ETL process is similar as below (except I stored data in AWS s3 bucket, not Dynamo):
 
